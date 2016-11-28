@@ -1,0 +1,84 @@
+  <!-- Top navbar. -->
+    <nav class="navbar navbar-default">
+        <!-- The logo. -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-logo">
+            <a href="{{ site.baseurl }}/">
+              <img alt="Apache Flink" src="{{ site.baseurl }}/img/navbar-brand-logo.png" width="147px" height="73px">
+            </a>
+          </div>
+        </div><!-- /.navbar-header -->
+
+        <!-- The navigation links. -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-main">
+
+            <!-- Overview -->
+            <li{% if page.url == '/index.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
+
+            <!-- Intro -->
+            <li{% if page.url == '/introduction.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/introduction.html">Introduction</a></li>
+
+            <!-- Ecosystem -->
+            <li{% if page.url == '/ecosystem.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/ecosystem.html">Ecosystem</a></li>
+
+            <!-- Powered by -->
+            <li><a href="{{ site.baseurl }}/poweredby.html">Powered by Flink</a></li>
+
+            <!-- Community -->
+            <li><a href="{{ site.baseurl }}/community.html">Community &amp; Project Info</a></li>
+
+            <!-- Contribute -->
+            <li><a href="{{ site.baseurl }}/contribute.html">How to Contribute</a></li>
+
+
+            <hr />
+
+            <!-- Quickstart -->
+            <li>
+              <a href="{{ site.docs-stable }}/quickstart/setup_quickstart.html" target="_blank">Quickstart <small><span class="glyphicon glyphicon-new-window"></span></small></a>
+            </li>
+
+            <!-- Documentation -->
+            <li>
+              <a href="{{ site.docs-stable }}" target="_blank">Documentation <small><span class="glyphicon glyphicon-new-window"></span></small></a>
+            </li>
+
+            <!-- Blog -->
+            <li class="{% if page.url contains '/blog/' or page.url contains '/news/' %} active{% endif %} hidden-md hidden-sm"><a href="{{ site.baseurl }}/blog/"><b>Flink Blog</b></a></li>
+
+            <!-- GitHub -->
+            <li>
+              <a href="https://github.com/apache/flink" target="_blank">Flink on GitHub <small><span class="glyphicon glyphicon-new-window"></span></small></a>
+            </li>
+
+             <!-- Downloads -->
+            <li class="{% if page.url == '/downloads.html' %}active{% endif %}"><a class="btn btn-info" href="{{ site.baseurl }}/downloads.html">Download Flink</a></li>
+
+
+
+
+          </ul>
+
+
+
+          <ul class="nav navbar-nav navbar-bottom">
+          <hr />
+
+            <!-- Twitter -->
+            <li><a href="{{ site.twitter }}" target="_blank">@ApacheFlink <small><span class="glyphicon glyphicon-new-window"></span></small></a></li>
+
+            <!-- FAQ -->
+            <li {% if page.url == '/faq.html' %} class="hidden-sm active"{% endif %}><a href="{{ site.baseurl }}/faq.html">FAQ</a></li>
+
+            <!-- Visualizer -->
+            <li class="{% if page.url contains '/visualizer/' %} active{% endif %} hidden-md hidden-sm"><a href="{{ site.baseurl }}/visualizer/" target="_blank">Plan Visualizer <small><span class="glyphicon glyphicon-new-window"></span></small></a></li>
+
+          </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
