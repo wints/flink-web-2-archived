@@ -5,7 +5,7 @@
 #     {{ site.CONFIG_KEY }}
 #------------------------------------------------------------------------------
 
-url: https://wints.github.io/flink-web-update
+url: https://wints.github.io/flink-web-update/
 
 DOCS_BASE_URL: http://ci.apache.org/projects/flink/
 
