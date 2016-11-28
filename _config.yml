@@ -5,7 +5,7 @@
 #     {{ site.CONFIG_KEY }}
 #------------------------------------------------------------------------------
 
-url: https://wints.github.io/flink-web-update/
+url: http://flink.apache.org
 
 DOCS_BASE_URL: http://ci.apache.org/projects/flink/
 
@@ -97,4 +97,3 @@ host: 0.0.0.0
 # News Posts
 paginate: 10
 paginate_path: "blog/page:num"
-
